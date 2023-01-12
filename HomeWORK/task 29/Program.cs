@@ -1,5 +1,8 @@
 ﻿// Напишите программу, которая задаёт массив из 8 целых чисел с клавиатуры 
 // и далее выводит массив на экран в одну строку.
+Console.WriteLine("Введите размер массива");
+int n = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine();
 void FillArray(int[]col)
 {
     int length = col.Length;
@@ -24,7 +27,7 @@ void PrintArray(int[]col1)
     }
 }
 
-int[] array = new int [8];
+int[] array = new int [n];
 FillArray(array);
 Console.WriteLine();
 PrintArray(array);
